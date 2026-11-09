@@ -11,7 +11,7 @@ import streamlit as st
 
 
 with st.sidebar:
-    # Título de la barra lateral
+
     st.header("Mi primera barra lateral de Streamlit")
 
 
@@ -25,11 +25,11 @@ with st.sidebar:
     except:
         st.caption("[Imagen de Universidad San Sebastián]")
 
-    # Botón en la barra lateral
+
     if st.button("Haz clic pero en la Barra Lateral"):
         st.write("¡Diste clic en el botón!")
 
-    # Campo de texto en la barra lateral
+
     texto_sidebar = st.text_input("Escribe algo en la barra", key="sidebar_input")
     if texto_sidebar:
         st.write(f"Escribiste: {texto_sidebar}")
