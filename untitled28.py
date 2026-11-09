@@ -9,26 +9,18 @@ Original file is located at
 
 import streamlit as st
 
-
 with st.sidebar:
-
     st.header("Mi primera barra lateral de Streamlit")
-
-
     st.subheader("¡Hola, Barra Lateral!")
-
     st.write("Esta es una barra lateral")
-
 
     try:
         st.image("logo_uss.png", use_column_width=True)
     except:
         st.caption("[Imagen de Universidad San Sebastián]")
 
-
     if st.button("Haz clic pero en la Barra Lateral"):
         st.write("¡Diste clic en el botón!")
-
 
     texto_sidebar = st.text_input("Escribe algo en la barra", key="sidebar_input")
     if texto_sidebar:
@@ -38,21 +30,17 @@ with st.sidebar:
 
 st.header("Mi primera aplicación de Streamlit")
 
-
 st.subheader("¡Hola, Streamlit!")
 
 st.write("Esta es una aplicación simple")
-
 
 try:
     st.image("logo_uss.png", width=300)
 except:
     st.caption("[Imagen de Universidad San Sebastián]")
 
-
 if st.button("Haz clic"):
     st.write("¡Diste clic en el botón!")
-
 
 texto_principal = st.text_input("Escribe algo", key="main_input")
 
